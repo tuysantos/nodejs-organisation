@@ -1,0 +1,7 @@
+<div class="repo-details">
+  <ul *ngIf="repoDetails?.length > 0">
+    <li id="linkId" class="repo-details-li" *ngFor="let item of repoDetails">
+      {{ item.title }}
+    </li>
+  </ul>
+</div>

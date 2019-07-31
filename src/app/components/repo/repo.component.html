@@ -1,0 +1,19 @@
+<div class="repo">
+  <app-loading *ngIf="repos?.length === 0"></app-loading>
+  <ul>
+    <li
+      class="repo-li"
+      *ngFor="let repo of repos; trackBy: trackByFn"
+      (click)="getRepoTitles(repo.name)"
+    >
+      {{ repo.name }}
+      <app-loading
+        *ngIf="repoDetails?.length === 0 && selected === repo.name"
+      ></app-loading>
+      <app-repo-details
+        *ngIf="repoDetails?.length > 0 && selected === repo.name"
+        [repoDetails]="repoDetails"
+      ></app-repo-details>
+    </li>
+  </ul>
+</div>

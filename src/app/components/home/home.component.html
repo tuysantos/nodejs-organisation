@@ -1,0 +1,17 @@
+<div>
+  <p>
+    This project uses Angular 7 with RxJs. <br /><br />
+    The project is a simple list of repositories returned by the api
+    "https://api.github.com/orgs/nodejs/repos". Once a list is displayed, it is
+    possible to expand a particular repository by clicking on it. <br /><br />
+    The list of titles for a given repository is loaded from the API
+    "https://api.github.com/repos/nodejs/reponame/issues?state=open".
+    <br /><br />
+    It is also implemented a caching functionality to prevent the same call to
+    the API.<br /><br />
+    Finally, between every call we display a message "loading...". However,
+    while reading from the cache the loading time is nearly 0.5 seconds. To
+    allow the message to be visible when its call from the service or from the
+    cache, we add a 0.5 seconds delay.
+  </p>
+</div>

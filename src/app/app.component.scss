@@ -1,0 +1,15 @@
+.repo-nav {
+  .nav-ul {
+    div {
+      display: inline;
+      margin-right: 10px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .active {
+    color: #009fdb;
+    font-family: font-bold;
+  }
+}

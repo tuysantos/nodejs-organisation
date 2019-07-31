@@ -1,0 +1,21 @@
+<div class="repo-nav">
+  <div class="nav-ul">
+    <div>
+      <a
+        [routerLink]="['home']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </div>
+    <div>
+      <a
+        [routerLink]="['repo']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Repositories</a
+      >
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
